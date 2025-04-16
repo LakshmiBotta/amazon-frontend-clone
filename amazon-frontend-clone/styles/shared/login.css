@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin: 0 auto 20px;
+}
+
+.login-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.login-box h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-box label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.help {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.help a {
+  color: #0066c0;
+  text-decoration: none;
+}
+
+.help a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.divider span {
+  position: relative;
+  background: #fff;
+  padding: 0 10px;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  z-index: -1;
+}
+
+.create-account {
+  background-color: #e7e9ec;
+  border: 1px solid #adb1b8;
+  color: #111;
+  margin-top: 10px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Sign-In</title>
+    <link rel="stylesheet" href="styles/shared/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/amazon-logo.png" alt="Amazon" class="logo" />
+
+      <div class="login-box">
+        <h1>Sign in</h1>
+        <form id="loginForm">
+          <label for="email">Email or mobile phone number</label>
+          <input type="text" id="email" name="email" required />
+
+          <button type="submit">Continue</button>
+        </form>
+
+        <p class="help"><a href="#">Need help?</a></p>
+
+        <div class="divider">
+          <a href="#"><span>New to Amazon?</span></a>
+        </div>
+
+        <button class="create-account">Create your Amazon account</button>
+      </div>
+    </div>
+
+    <script>
+      const form = document.querySelector("#loginForm");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        // Save the login status in localStorage
+        localStorage.setItem("isLoggedIn", "true");
+
+        // Redirect to the main page (index.html)
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>
